@@ -7,9 +7,96 @@
 </head>
 <body>
   <header>
-    <h1>안녕</h1>
-    <p>나는 황상빈이야.</p>
-    
+    <div>
+      <h1>
+        <a href="#main">Project</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero tag">Learning &amp; Building Since 2026.</p>
+      <h1 class="hero title">
+        <span class="hero1">Hello, I'm</span>
+        <span class="hero2">a Front</span>
+        <span class="hero3">Developer</span>
+      </h1>
+      <p class="hero location">Based in GwanJu.</p>
+    </section>
+
+    <section id="portfolio" class="photo-grid">
+      <div class="photo-grid__item">
+        <img src="../img/cafe.webp" alt="카페에서 고양이와 사진찍은 나">
+      </div>
+      <div class="photo-grid__item">
+        <img src="../img/farm.webp" alt="목장에서 나의 뒷 모습">
+      </div>
+      <div class="photo-grid__item">
+        <img src="../img/sheep.webp" alt="양과 함께 찍은 나">
+      </div>
+      <div class="photo-grid__item">
+        <img src="../img/beach.webp" alt="해변에서 찍은 나의 뒷 모습">
+      </div>
+    </section>
+
+    <section id="about" class="aboutme">
+      <h2 class="aboutme__title">About Me</h2>
+      <div class="aboutme__body">
+        <p>안녕하세요, 황상빈입니다.<br>
+        사용자에게 더 나은 경험을 제공하기 위해<br>
+        프론트엔드 개발을 배우고 있습니다.
+        </p>
+        <p>
+          코드를 통해 가치를 만들고,<br>
+          꾸준한 성장으로 사용자와 함께하는 개발자가 되고자 합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="whatido">
+      <div class="whatido__grid">
+
+        <h2 class="whatido__title">What I Do</h2>
+
+        <div class="whatido__skills">
+          <span>Figma</span>
+          <span>Git</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+        </div>
+
+        <div class="whatido__card">
+          <h3 class="whatido__card-title">Frontend Development</h3>
+          <p class="whatido__card-desc">
+            사용자가 편하게 이용할 수 있는<br>
+            웹 인터페이스를 만드는 것을<br>
+            좋아합니다.
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contactme">
+    <div class="footer__left">
+      <span class="footer__logo">2026 Project</span>
+      <span class="footer__sub">Project 01</span>
+    </div>
+    <nav class="footer__links">
+      <a target="" href="mailto:hsb052890@gmail.com">s</a>
+    </nav>
+  </footer>
 </body>
 </html>
