@@ -1,0 +1,164 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  display: inline-grid;
+  width: 100vw;
+  background-color: #000;
+  color: #FFF;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  grid-template-rows: repeat(4, fit-content(100%));
+  grid-template-columns: repeat(1, minmax(0,1fr));
+  grid-auto-flow: row;
+}
+
+header { 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--px);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Source Serif 4";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.68px;;
+}
+
+header ul {
+  display: flex;
+align-items: flex-start;
+gap: clamp(0.75rem, 3vw, 2.25rem);
+}
+
+ul a {
+  font-family: "Red hat Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+}
+
+
+main {
+  padding: 0 var(--px);
+}
+
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.hero__tag {
+  font-family: "Inria Sans";
+  text-align: right;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.hero__title {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: clamp(3.5rem, 10.5vw, 8.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.hero1 {
+display: block; text-align: left;
+}
+.hero2 {
+display: block; text-align: center;
+}
+.hero3 {
+display: block; text-align: right;
+}
+
+
+.hero__location {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 2.5rem 0;
+}
+
+.photo-grid__item {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.photo-grid__item img {
+      transition: transform 0.5s ease;
+    }
+ 
+    .photo-grid__item:hover img {
+      transform: scale(1.03);
+    }
+
+.aboutme {
+padding: 3.5rem 0;
+}
+
+.aboutme__title{
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.025rem;
+  margin-bottom: 1.75rem;
+}
+
+.aboutme__body {
+  flex-direction: column;
+  width: 427px;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+}
+
+.whatido {
+  display: flex;
+  padding: 48px 0;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 208px;
+  align-self: stretch;
+}
+
+.whatido__grid {
+  display: flex;
+width: 1183px;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.whatido__skills {
+  display: flex;
+width: 184px;
+align-items: center;
+gap: 25px;
+grid-row: span 1;
+grid-column: span 1;
+}
