@@ -317,19 +317,23 @@ footer {
 
 /* ---------------------- Mobile 320px ----------------------------- */
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
 
   body {
     padding: 0 20px;
+    /* grid-column: center; */
   }
 
+  .logo {
+    font-size: 2.5rem;
+  }
   
   header ul {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   ul a {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
 
   
@@ -346,7 +350,6 @@ footer {
     aspect-ratio: 4 / 3;
   }
 
-  /* What I Do 2열 → 1열 */
   .whatido__grid {
     grid-template-columns: 1fr;
   }
@@ -355,7 +358,6 @@ footer {
     text-align: left;
   }
 
-  /* 푸터 세로로 쌓기 */
   footer {
     flex-direction: column;
     align-items: flex-start;
