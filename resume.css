@@ -320,10 +320,10 @@ footer {
 @media (min-width: 320px) and (max-width: 767px) {
 
   body {
-    padding: 0 20px; /* 좌우 여백 줄이기 */
+    padding: 0 20px;
   }
 
-  /* 네비 */
+  
   header ul {
     gap: 0.5rem;
   }
@@ -332,12 +332,12 @@ footer {
     font-size: 0.75rem;
   }
 
-  /* 히어로 */
+  
   .hero__tag {
     font-size: 0.75rem;
   }
 
-  /* 사진 그리드 4열 → 1열 */
+  
   .photo-grid {
     grid-template-columns: 1fr;
   }
@@ -364,7 +364,7 @@ footer {
 
   .footer__links {
     width: 100%;
-    justify-content: flex-end; /* 형이 찾은 그거! */
+    justify-content: flex-end;
   }
 
   .footer__btn {
