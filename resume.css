@@ -1,0 +1,374 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  width: 100vw;
+  background-color: #000;
+  color: #FFF;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  grid-template-rows: repeat(4, fit-content(100%));
+  grid-template-columns: repeat(1, minmax(0,1fr));
+  grid-auto-flow: row;
+}
+
+/* ---------------------- header ----------------------------- */
+
+header { 
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--px);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Source Serif 4";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.68px;;
+}
+
+
+header ul {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 3vw, 2.25rem);
+}
+
+.nav__links a {
+  font-family: "Red hat Display";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  transition: color 0.2s ease;
+}
+.nav__links a:hover {
+  color: var(--text-muted)
+}
+
+/* ---------------------- Main ----------------------------- */
+
+main {
+  padding: 0 var(--px);
+}
+
+/* ---------------------- hero ----------------------------- */
+
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.hero__tag {
+  font-family: "Inria Sans";
+  text-align: right;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.hero__title {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: clamp(3.5rem, 10.5vw, 8.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.hero1 {
+  display: block; text-align: left;
+}
+.hero2 {
+  display: block; text-align: center;
+}
+.hero3 {
+  display: block; text-align: right;
+}
+
+
+.hero__location {
+  font-family: "Inria Sans";
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+/* ---------------------- photo ----------------------------- */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 2.5rem 0;
+}
+
+.photo-grid__item {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.photo-grid__item img {
+  transition: transform 0.5s ease;
+}
+
+.photo-grid__item:hover img {
+  transform: scale(1.03);
+}
+
+/* ---------------------- aboutme ----------------------------- */
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.aboutme__title{
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.025rem;
+  margin-bottom: 1.75rem;
+}
+
+.aboutme__body {
+  font-family: "Pretendard";
+  font-size: 1.1rem; 
+  line-height: 1.9;
+  max-width: 480px;
+}
+
+.aboutme__body p + p {
+  margin-top: 1rem;
+}
+
+/* ---------------------- whatido ----------------------------- */
+
+.whatido__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem 3rem;
+  align-items: start;
+}
+
+.whatido__title {
+  font-family: "Red Hat Display";
+  font-weight: 800;
+  font-size: clamp(2.25em, 3.5vw, 2.25rem);
+  letter-spacing: -0.025rem;
+}
+
+.whatido__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 2rem;
+  text-align: left;
+  padding-top: 0.25rem;
+}
+
+.whatido__skills span {
+  font-family: "Inria Sans";
+  font-size: 0.937rem;
+  color: var(--text-muted);
+  line-height: 2.2;
+  white-space: nowrap;
+}
+
+.whatido__card {
+  margin-top: 2rem;
+  grid-column: 1;
+}
+
+.whatido__card-title {
+  font-family: "Red Hat Display";
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01;
+  margin-bottom: 0.5rem;
+}
+
+.whatido__card-desc {
+  font-family: "Pretendard";
+  font-size: 1rem;
+  color: rgba( 255, 255, 255, 0.65);
+  line-height: 1.85;
+}
+
+/* ---------------------- footer ----------------------------- */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem var(--px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  gap: 0.70rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.footer__logo {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: var(--text-muted);
+}
+
+.footer__sub {
+  font-family: "Red Hat Display";
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.footer__links {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  gap: 1.625rem;
+  /* flex-shrink: 0; */
+  flex-wrap: nowrap;
+}
+
+.footer__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  white-space: nowrap;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer__btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------------------- Animation ----------------------------- */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.hero__tag,
+.hero__title,
+.hero__location {
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero__tag  {animation-delay: 0.05s;}
+.hero__title  {animation-delay: 0.15s;}
+.hero__location  {animation-delay: 0.25s;}
+
+/* ---------------------- Tablet 768px ----------------------------- */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  body {
+    width: 100vw;
+    padding: 0 24px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .whatido__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .whatido__skills {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ---------------------- Mobile 320px ----------------------------- */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  body {
+    padding: 0 20px; /* 좌우 여백 줄이기 */
+  }
+
+  /* 네비 */
+  header ul {
+    gap: 0.5rem;
+  }
+
+  ul a {
+    font-size: 0.75rem;
+  }
+
+  /* 히어로 */
+  .hero__tag {
+    font-size: 0.75rem;
+  }
+
+  /* 사진 그리드 4열 → 1열 */
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid__item {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* What I Do 2열 → 1열 */
+  .whatido__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whatido__skills {
+    text-align: left;
+  }
+
+  /* 푸터 세로로 쌓기 */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .footer__links {
+    width: 100%;
+    justify-content: flex-end; /* 형이 찾은 그거! */
+  }
+
+  .footer__btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
