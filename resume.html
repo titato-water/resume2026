@@ -24,7 +24,7 @@
     </h1>
       <ul class="nav__links">
         <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Photo</a></li>
+        <li><a href="#photo">Photo</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -76,13 +76,22 @@
       <section id="about" class="section">
         <h2 class="aboutme__title">About Me</h2>
         <div class="aboutme__body">
-          <p>안녕하세요, 황상빈입니다.<br>
-            사용자에게 더 나은 경험을 제공하기 위해<br>
-            프론트엔드 개발을 배우고 있습니다.
+          <p class="aboutme__card-desc">
+            여행과 새로운 경험을 좋아하며<br>
+            넓은 시야를 가지기 위해<br>
+            노력합니다.
           </p>
-          <p>
-            코드를 통해 가치를 만들고,<br>
-            꾸준한 성장으로 사용자와 함께하는 개발자가 되고자 합니다.
+
+          <p class="aboutme__card-desc">
+            작은 일상 속에서도<br>
+            즐거움과 배움을 찾으려는<br>
+            성향을 가지고 있습니다.
+          </p>
+
+          <p class="aboutme__card-desc">
+            천천히 가더라도 멈추지 않고<br>
+            꾸준히 성장하는 사람이<br>
+            되고 싶습니다.
           </p>
         </div>
         <div>
@@ -94,44 +103,55 @@
         <div class="whatido__grid">
           <h2 class="whatido__title">What I Do</h2>
           <div class="whatido__skills">
-            <span class="fig">
+            <div class="skill-item">
+            <span class="skill-icon fig">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32px" viewBox="0 0 1024 1280" fill="none">
-              <path d="M312 840C312 784.772 356.772 740 412 740H512V840C512 895.228 467.228 940 412 940C356.772 940 312 895.228 312 840Z" fill="#24CB71"/>
-              <path d="M512 340V540H612C667.228 540 712 495.228 712 440C712 384.772 667.228 340 612 340H512Z" fill="#FF7237"/>
-              <path d="M611.167 740C666.395 740 711.167 695.228 711.167 640C711.167 584.772 666.395 540 611.167 540C555.939 540 511.167 584.772 511.167 640C511.167 695.228 555.939 740 611.167 740Z" fill="#00B6FF"/>
-              <path d="M312 440C312 495.228 356.772 540 412 540H512V340H412C356.772 340 312 384.772 312 440Z" fill="#FF3737"/>
-              <path d="M312 640C312 695.228 356.772 740 412 740H512V540H412C356.772 540 312 584.772 312 640Z" fill="#874FFF"/>
-            </svg>
-          </span>
-            <p>"아이디어를 사용자 중심의 인터페이스로 설계합니다."</p>
+                <path d="M312 840C312 784.772 356.772 740 412 740H512V840C512 895.228 467.228 940 412 940C356.772 940 312 895.228 312 840Z" fill="#24CB71"/>
+                <path d="M512 340V540H612C667.228 540 712 495.228 712 440C712 384.772 667.228 340 612 340H512Z" fill="#FF7237"/>
+                <path d="M611.167 740C666.395 740 711.167 695.228 711.167 640C711.167 584.772 666.395 540 611.167 540C555.939 540 511.167 584.772 511.167 640C511.167 695.228 555.939 740 611.167 740Z" fill="#00B6FF"/>
+                <path d="M312 440C312 495.228 356.772 540 412 540H512V340H412C356.772 340 312 384.772 312 440Z" fill="#FF3737"/>
+                <path d="M312 640C312 695.228 356.772 740 412 740H512V540H412C356.772 540 312 584.772 312 640Z" fill="#874FFF"/>
+              </svg>
+            </span>
+          <p class="skill-desc">"아이디어를 사용자 중심의 인터페이스로 설계합니다."</p>
+          </div>
 
-            <span class="git">
+            <div class="skill-item">
+            <span class="skill-icon git">
               <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><path d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill="#181616" fill-rule="evenodd"/></svg>
             </span>
-            <p>"변화를 기록하고 성장 과정을 관리합니다."</p>
+            <p class="skill-desc">"변화를 기록하고 성장 과정을 관리합니다."</p>
+            </div>
 
-            <span class="html"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 48 48">
+            <div class="skill-item">
+            <span class="skill-icon html"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 48 48">
               <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
               <path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
               </svg>
             </span>
-            <p>"탄탄한 구조를 만드는 웹의 뼈대를 설계합니다."</p>
+            <p class="skill-desc">"탄탄한 구조를 만드는 웹의 뼈대를 설계합니다."</p>
+            </div>
 
-            <span class="css">
+            <div class="skill-item">
+            <span class="skill-icon css">
               <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 48 48">
               <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
             </svg>
             </span>
-            <p>"깔끔하고 직관적인 사용자 경험을 디자인합니다."</p>
+            <p class="skill-desc">"깔끔하고 직관적인 사용자 경험을 디자인합니다."</p>
+            </div>
 
-            <span class="js">
+            <div class="skill-item">
+            <span class="skill-icon js">
               <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 48 48">
               <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
               </svg>
             </span>
-            <p>"사용자와 상호작용하는 웹을 구현합니다."</p>
+            <p class="skill-desc">"사용자와 상호작용하는 웹을 구현합니다."</p>
+            </div>
 
-            <span class="react">
+            <div class="skill-item">
+            <span class="skill-icon react">
               <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="-11.5 -10.23174 23 20.46348"><script xmlns=""/>
               <title>React Logo</title>
               <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
@@ -142,9 +162,10 @@
               </g>
             </svg>
             </span>
-            <p>"재사용 가능한 컴포넌트로 효율적인 개발을 지향합니다."</p>
+            <p class="skill-desc">"재사용 가능한 컴포넌트로 효율적인 개발을 지향합니다."</p>
           </div>
-          
+          </div>
+
           <div class="whatido__card">
             <h3 class="whatido__card-title">Frontend Development</h3>
             <div class="whatido__card-container">
@@ -153,12 +174,12 @@
                 깔끔하고 직관적인 UI를<br>
                 설계합니다.
               </p>
-              <p class="whatido__card-desc2">
+              <p class="whatido__card-desc">
                 웹 표준과 접근성을 고려하여<br>
                 안정적이고 유지보수하기 쉬운<br>
                 코드를 작성하려 노력합니다.
               </p>
-              <p class="whatido__card-desc3">
+              <p class="whatido__card-desc">
                 새로운 기술을 배우는 것을 즐기며<br>
                 더 나은 서비스를 만들기 위해<br>
                 꾸준히 성장하고 있습니다.
@@ -170,15 +191,22 @@
   </main>
 
   <footer id="contact">
-    <div class="footer__left">
-      <span class="footer__logo">2026 Project</span>
-      <span class="footer__sub">Project 01</span>
+    <div class="footer__content">
+      <h2 class="footer__title">Let's Work Together</h2>
+      
+      <p class="footer__desc">
+        새로운 기회를 기다리고 있습니다.
+      </p>
+
+      <div class="footer__links">
+        <a href="mailto:hsb052890@gmail.com" class="footer__btn">Email</a>
+        <a href="https://github.com/titato-water" target="_blank" rel="noopner noreferrer" class="footer__btn">Github</a>
+        <a href="https://www.instagram.com/nibgnas__/" target="_blank" class="footer__btn">Instagram</a>
+      </div>
+      <span class="footer__copy">
+        © 2026 Hwang Sang Bin
+      </span>
     </div>
-    <nav class="footer__links">
-      <a href="mailto:hsb052890@gmail.com" class="footer__btn">Email</a>
-      <a href="https://github.com/titato-water" target="_blank" rel="noopner noreferrer" class="footer__btn">Github</a>
-      <a href="https://www.instagram.com/nibgnas__/" class="footer__btn">Contact Me</a>
-    </nav>
   </footer>
 </body>
 </html>
