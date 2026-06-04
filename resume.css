@@ -184,17 +184,43 @@ main {
 }
 
 .photo-grid__item {
+  position: relative;
   aspect-ratio: 3 / 4;
   overflow: hidden;
 }
 
+.photo-grid__item p {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+
 .photo-grid__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .photo-grid__item:hover img {
   transform: scale(1.03);
+  filter: brightness(0.5);
 }
+
+.photo-grid__item:hover p {
+  opacity: 1;
+}
+
 
 /* ---------------------- aboutme ----------------------------- */
 
@@ -202,7 +228,7 @@ main {
   padding: 3.5rem 0;
 }
 
-.aboutme__title{
+.aboutme__title {
   font-family: "Red Hat Display";
   font-weight: 700;
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
@@ -211,6 +237,7 @@ main {
 }
 
 .aboutme__body {
+  color: var(--text-muted);
   font-family: "Pretendard";
   font-size: 1.1rem; 
   line-height: 1.9;
@@ -260,16 +287,18 @@ main {
 
 .whatido__card-title {
   font-family: "Red Hat Display";
-  font-size: 1.5rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.01;
   margin-bottom: 0.5rem;
 }
 
-.whatido__card-desc {
+.whatido__card-desc, 
+.whatido__card-desc2, 
+.whatido__card-desc3 {
   font-family: "Pretendard";
-  font-size: 1rem;
-  color: rgba( 255, 255, 255, 0.65);
+  font-size: 1.1rem;
+  color: var(--text-muted);
   line-height: 1.85;
 }
 
@@ -340,19 +369,23 @@ footer {
 /* ---------------------- Animation ----------------------------- */
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px);}
+  from { opacity: 0; transform: translateY(100px);}
   to { opacity: 1; transform: translateY(0);}
 }
 
 .hero__tag,
-.hero__title,
+.hero1,
+.hero2,
+.hero3,
 .hero__location {
-  animation: fadeUp 0.8s ease both;
+  animation: fadeUp 1s ease both;
 }
 
 .hero__tag  {animation-delay: 0.05s;}
-.hero__title  {animation-delay: 0.15s;}
-.hero__location  {animation-delay: 0.25s;}
+.hero1  {animation-delay: 0.05s;}
+.hero2  {animation-delay: 0.25s;}
+.hero3  {animation-delay: 0.45s;}
+.hero__location  {animation-delay: 0.05s;}
 
 /* ---------------------- Tablet 768px ----------------------------- */
 
